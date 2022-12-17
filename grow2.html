@@ -1,0 +1,216 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adam Menz - Portfolio</title>
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+
+    <link rel="icon" type="image/png" href="assets/favicon.png">
+    
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-48202645-1', 'auto');
+      ga('send', 'pageview');
+
+    </script>
+  </head>
+  <body>
+ 
+    <div class="row back-item">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <a href="index.html"><h4><< back to all work</h4></a>
+      </div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+
+    <div class="row project-intro">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <h1>Grow.com - Smart Builder & Dashboard Filtering</h1>
+        <div class="body-callout">
+          <a href="http://www.grow.com">Grow.com</a> provides BI to help small and medium businesses grow. I lead the design efforts to simplify what is required to get valuable BI. This includes a complete redesign of the Grow Metric Builder, introducing Datasets, a Data Warehouse, and creating new data transformation and visualization tools.
+        </div> 
+      </div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+
+    <div class="row project-image">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow2/grow2-promo.png">
+      </div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+
+    <div class="row project-section">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <h3>Research & Discovery</h3>
+        <div class="body-detail">
+         This project largely grew out of an extension of the <a href="grow.html">builder redesign.</a> In that project we introduced a few features that <a href="grow.html#easy">made building easier for non-builders</a>. We continue to focus on making data analysis easier for non-technical users.
+         <br><br>
+         As we interviewed customers and performed analysis on existing data we found that many users were making the same metrics over and over with a single small change. For example a Sales by week metric, a Sales by month metric, and a Sales by quarter or Sales by team A, Sales by team B, etc. Another issue we found was that non-builders were limited by the insights they can get from Grow. They were only able to see what builders have provided for them. The root of both of these findings was that Grow's metrics were mostly static. Static metrics only answered one question and users who are “consumers” had no ability to ask more detailed questions they may have had.
+         <br><br>
+          <img src="assets/grow2/wall.jpeg">
+          <br><br>
+          <h4>Guiding Insights:</h4>
+          <div class="insights body-detail">
+          <ol class="body-detail">
+            <li>There was no way for users to perform ad-hoc analysis on their data.</li>
+            <li>There was no way for users to analyze their data outside the metric building context. This limited the insights they could get and who could get these insights.</li>
+          </ol>
+          </div>
+        </div>
+      </div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+
+    
+
+    <div class="row project-image">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow2/affinity.jpeg">
+      </div>
+      <div class="medium-2 columns caption">As we consolidated our research findings, ad-hoc analysis emerged as a major category.</div>
+      <div class="medium-2 columns">&nbsp;</div>
+    </div>
+
+
+    <div class="row project-section">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <h4>Design Idea - Dashboard Filtering & Smart Builder</h4>
+        <div class="body-detail">
+          <p class="body-detail">
+          With these insights & guiding principles, we brainstormed & sketched with the product and engineering team. We converged on the ideas of “Dashboard Filtering” and the necessary prerequisite of a builder that supports it, the “Smart Builder”. 
+          </p>
+          <p class="body-detail">
+          Dashboard Filtering would expose some controls on the dashboard that could enable anyone to look at their data with a different date range, date grouping, or with a filter applied. For example, someone could change the date range of a metric with a drop down or filter a sales metric down to a single sales person. 
+          </p>
+          <p class="body-detail">
+          To support this feature, we needed to update how visualizations were made. While a few dropdowns to change a metric seems simple, the data architecture of our metrics did not support that functionality. We needed to re-architect and re-design the visualization process. The existing architecture performed “destructive” transforms. For example, if you grouped your data, Grow only maintained an understanding of the aggregated data, not the transactional data. The new builder, or “Smart Builder,” would need to perform data transformations that maintained all the underlying data. 
+        </div>
+      </div>
+      <div class="medium-2 columns">&nbsp;</div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+    <div class="row project-image ">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow/chart-level-transforms.png">
+      </div>
+      <div class="medium-2 columns caption">An earlier feature, Chart Level Transforms, that tested & validated this idea.</div>
+      <div class="medium-2 columns">&nbsp;</div>
+    </div>
+
+    <div class="row project-section">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <div class="body-detail">
+          We had previously released a small feature, <a href="grow.html#clt">Chart Level Transforms</a>, testing this idea. This showed the approach we wanted to take was useful to users. However, the feedback we got was that it was not powerful enough to replace the current way of working. Additionally, we learned its location in the UI was confusing and disconnected from users' workflows.
+        </div>
+      </div>
+      <div class="medium-2 columns">&nbsp;</div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+
+
+    <div class="row project-section">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <h3>Design, Prototype, & Test</h3>
+        <div class="body-detail">
+          With these insights and learning, we began sketching, prototyping, and testing. We tested extensively with internal users and our customer success team. Through this process, the design became much more usable and we were able to refine features.
+        </div>
+      </div>
+      <div class="medium-2 columns">&nbsp;</div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+    </div>
+    <div class="row project-image ">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow2/v0.jpg">
+      </div>
+      <div class="medium-2 columns caption">In our first designs, we expanded the capabilites of the existing Chart Level Transforms feature. The feedback on this test showed this pattern did not fit how users thought about building metrics. The metric analysis tools were too disconnected from the rest of the metric building.</div>
+      <div class="medium-2 columns">&nbsp;</div>
+    </div>
+
+        </div>
+        <div class="row project-image ">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow2/v2.png">
+      </div>
+      <div class="medium-2 columns caption">We wanted to make the analysis tools fit in the users' typical workflow. We made a prototype to test where each analysis tool belonged in the UI. However, nearly every user we tested with had a different mental model of how these tools worked and where they belonged. In order to address the disparity of expected tool locations, we brought them all out front and center. This immediately clicked in our next round of testing and there was no longer confusion.
+      </div>
+      <div class="medium-2 columns">&nbsp;</div>
+    </div>
+
+    </div>
+        <div class="row project-image ">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow2/v3.png">
+      </div>
+      <div class="medium-2 columns caption">The previous design did not provide enough feedback about the visualizations. A user couldn't tell which analysis transforms were in use. To address this, we added summary statements to each transform.</div>
+      <div class="medium-2 columns">&nbsp;</div>
+    </div>
+
+    </div>
+      <div class="row project-image ">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow2/v4.png">
+      </div>
+      <div class="medium-2 columns caption">The final designs for the Smart Builder with the analysis transforms.</div>
+      <div class="medium-2 columns">&nbsp;</div>
+    </div>
+
+    
+    <div class="row project-section">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <h3>Release, Feedback, & Iteration</h3>
+        <div class="body-detail">
+          As we began to roll this out to our alpha and beta customers, the main feedback we received was the desire for more chart types to be supported. One of the trade-offs we made while developing was to initially support half of our chart types. During Beta, customers asked for support of all chart types, so they could use the Smart Builder for all of their metrics. This was a good sign to us, as users wanted to use the Smart Builder more.
+          <br><br>
+          Another piece of valuable feedback we received was more for feedback and transparency around what the builder was doing. The Smart Builder abstracts a lot of complexity from the user, for example through automated calculations. This is a major reduction in complexity for users, but they needed a better understanding of what the builder was doing behind the scenes. They wanted to validate that it was doing what they expected. We made a major effort to start surfacing this information. It has led to a dramatic increase in customer trust and has since become one of our design principles when building a new feature or product.</div>
+      </div>
+      <div class="medium-2 columns">&nbsp;</div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+
+    </div>
+      <div class="row project-image ">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <img src="assets/grow2/de_demo.gif">
+      </div>
+      <div class="medium-2 columns caption">A demo of the Smart Builder</div>
+      <div class="medium-2 columns">&nbsp;</div>
+    </div>
+
+    <div class="row back-item">
+      <div class="medium-1 columns">&nbsp;</div>
+      <div class="medium-7 columns">
+        <a href="index.html"><h4><< back to all work</h4></a>
+      </div>
+      <div class="medium-4 columns">&nbsp;</div>
+    </div>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
