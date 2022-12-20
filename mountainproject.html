@@ -1,38 +1,48 @@
-<!doctype html>
+<!DOCTYPE html>
 <html class="no-js" lang="en" dir="ltr">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Adam Menz - Portfolio</title>
-    <link rel="stylesheet" href="css/foundation.css">
-    <link rel="stylesheet" href="css/app.css">
+    <link rel="stylesheet" href="css/foundation.css" />
+    <link rel="stylesheet" href="css/app.css" />
 
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    
+    <link rel="icon" type="image/png" href="assets/favicon.png" />
+
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=G-4TBSCKRVR9"
+    ></script>
     <script>
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-      })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+      window.dataLayer = window.dataLayer || [];
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      ga('create', 'UA-48202645-1', 'auto');
-      ga('send', 'pageview');
-
+      gtag("config", "G-4TBSCKRVR9");
     </script>
   </head>
   <body>
- 
     <div class="row nav-bar">
       <div class="medium-1 columns">&nbsp;</div>
       <div class="medium-10 columns">
         <ul id="nav">
-          <li><a href="index.html"><h2 class="green">about</h2></a></li>
-          <li><a href="work.html"><h2 class="red active">work</h2></a></li>
-          <li><a href="resume.pdf" target="_blank"><h2 class="blue">resume</h2></a></li>
+          <li>
+            <a href="index.html"><h2 class="green">about</h2></a>
+          </li>
+          <li>
+            <a href="work.html"><h2 class="red active">work</h2></a>
+          </li>
+          <li>
+            <a href="resume.pdf" target="_blank"
+              ><h2 class="blue">resume</h2></a
+            >
+          </li>
         </ul>
         <video class="right" id="avatar" loop autoplay muted>
-          <source src="assets/jug.webm" type="video/webm">
+          <source src="assets/jug.webm" type="video/webm" />
         </video>
       </div>
       <div class="medium-1 columns">&nbsp;</div>
@@ -43,12 +53,22 @@
       <div class="medium-7 columns">
         <h1>Mountain Project</h1>
         <div class="body-callout">
-          Mountain Project is an online guidebook for rock climbing worldwide. It is an incredible source of information for rock climbers, however it does not have the greatest design. I decided to redesign the Mountain Project iOS app as a side project. My process I identified several areas the current app is lacking in to address in my design. These include encouraging user contributions, improved navigation, and a visual design refresh. I chose these areas to address based on my conversations with other climbers who use the app.
-        </div> 
+          Mountain Project is an online guidebook for rock climbing worldwide.
+          It is an incredible source of information for rock climbers, however
+          it does not have the greatest design. I decided to redesign the
+          Mountain Project iOS app as a side project. My process I identified
+          several areas the current app is lacking in to address in my design.
+          These include encouraging user contributions, improved navigation, and
+          a visual design refresh. I chose these areas to address based on my
+          conversations with other climbers who use the app.
+        </div>
         <div class="centering-container scrolling-proto">
-          <img id="empty-phone" src="assets/mountain-project/iphone-empty.png">
+          <img
+            id="empty-phone"
+            src="assets/mountain-project/iphone-empty.png"
+          />
           <div id="mp-proto-container">
-            <img id="mp-proto" src="assets/mountain-project/mp-proto.png">
+            <img id="mp-proto" src="assets/mountain-project/mp-proto.png" />
           </div>
         </div>
       </div>
